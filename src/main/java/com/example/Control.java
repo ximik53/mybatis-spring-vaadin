@@ -10,7 +10,7 @@ import javax.xml.ws.Service;
 @RestController
 class Control {
 
-    private final CompanyService repository;
+    public final CompanyService repository;
 
     Control(CompanyService repository) {
         this.repository = repository;
@@ -20,6 +20,5 @@ class Control {
     List<Company> all() {
         return repository.findAll();
     }
-
 
 }

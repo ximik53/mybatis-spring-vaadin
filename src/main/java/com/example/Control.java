@@ -10,7 +10,7 @@ import javax.xml.ws.Service;
 @RestController
 class Control {
 
-    public final CompanyService repository;
+    private final CompanyService repository;
 
     Control(CompanyService repository) {
         this.repository = repository;

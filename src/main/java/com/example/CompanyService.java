@@ -12,7 +12,7 @@ public interface CompanyService {
     @Select("SELECT * FROM company ORDER BY id")
     List<Company> findAll();
 
-    @Update("UPDATE company SET name = #{name}, website = #{website} WHERE id = #{id}")
+    @Update("UPDATE company SET name = #{name}, geometry = #{geometry} WHERE id = #{id}")
     void update(Company company);
 
 }

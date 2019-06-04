@@ -1,13 +1,12 @@
 package com.example;
 
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public interface CompanyService {
+public class CompanyService {
 
     @Select("SELECT * FROM company ORDER BY id")
     List<Company> findAll();

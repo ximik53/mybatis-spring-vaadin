@@ -6,7 +6,7 @@ public class Company {
 
     private String name;
 
-    private String website;
+    private String geometry;
 
     public Long getId() {
         return id;
@@ -24,11 +24,11 @@ public class Company {
         this.name = name;
     }
 
-    public String getWebsite() {
-        return website;
+    public String getGeometry() {
+        return geometry;
     }
 
-    public void setWebsite(String website) {
-        this.website = website;
+    public void setGeometry(String geometry) {
+        this.geometry = geometry;
     }
 }

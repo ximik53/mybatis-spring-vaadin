@@ -17,7 +17,7 @@ class Control {
     }
 
     @GetMapping("/")
-    List<Company> all() {
+    List<Company> findAll() {
         return repository.findAll();
     }
 

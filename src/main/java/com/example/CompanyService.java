@@ -1,6 +1,5 @@
 package com.example;
 
-
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -8,10 +7,13 @@ import java.util.List;
 @Service
 public class CompanyService {
 
-    @Select("SELECT * FROM company ORDER BY id")
-    List<Company> findAll();
+    private final CompanyRepository companyRepository;
 
-    @Update("UPDATE company SET name = #{name}, geometry = #{geometry} WHERE id = #{id}")
-    void update(Company company);
+    public CompanyService(CompanyRepository companyRepository) {
+        this.companyRepository = companyRepository;
+    }
 
+    public List<Company> findAll() {
+        return companyRepository.findAll();
+    }
 }

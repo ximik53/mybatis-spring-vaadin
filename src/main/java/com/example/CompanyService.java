@@ -6,6 +6,9 @@ import java.util.List;
 
 @Service
 public class CompanyService {
+    public CompanyService(){
+
+    }
 
     private final CompanyRepository companyRepository;
 
@@ -16,4 +19,5 @@ public class CompanyService {
     public List<Company> findAll() {
         return companyRepository.findAll();
     }
+
 }

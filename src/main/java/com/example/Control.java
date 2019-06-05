@@ -12,7 +12,7 @@ class Control {
     public Control(){
 
     }
-    private final CompanyService repository;
+    private CompanyService repository;
 
     Control(CompanyService repository) {
         this.repository = repository;

@@ -22,7 +22,7 @@ public class CompanyService {
     public List<Company> findAll() {
         return companyRepository.findAll();
     }
-    public List<Company> findAllPoly(){
-        return
+    public List<Company> findAllPoly(String names){
+        return companyRepository.findAllPoly(names);
     }
 }

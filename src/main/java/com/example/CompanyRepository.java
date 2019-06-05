@@ -5,6 +5,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.Collection;
+import java.util.List;
 
 @Repository
 public interface CompanyRepository extends JpaRepository<Company, Long> {
@@ -12,6 +13,6 @@ public interface CompanyRepository extends JpaRepository<Company, Long> {
             name = "search",
             value = "SELECT id, name FROM company WHERE ST_Contains(ST_GeomFromText(?), company.geometry)",
             nativeQuery = true)
-    Collection<Company> findAllPoly(String name);
+    List<Company> findAllPoly(String names);
 }
 

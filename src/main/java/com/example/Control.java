@@ -28,9 +28,9 @@ class Control {
 
     }
 
-    @RequestMapping(value = "/{name}", method = RequestMethod.GET)
-    List<Company> findPoly(@PathVariable String name) {
-        return service.findAllPoly();
+    @RequestMapping(value = "/{names}", method = RequestMethod.GET)
+    List<Company> findPoly(@PathVariable String names) {
+        return service.findAllPoly(names);
 
     }
 }

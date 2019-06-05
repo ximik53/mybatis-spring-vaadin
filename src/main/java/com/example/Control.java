@@ -18,7 +18,7 @@ class Control {
     }
 
     @GetMapping("/")
-    List<Company> findAll() {
+    List<Company> find() {
         return service.findAll();
     }
 

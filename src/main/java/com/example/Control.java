@@ -22,15 +22,15 @@ class Control {
 
     }
 
-    @GetMapping("/search")
+    @GetMapping("/list-city")
     List<Company> find() {
         return service.findAll();
 
     }
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
-    List<Company> findPoly(@RequestParam String names) {
-        return service.findAllPoly(names);
+    List<Company> findPoly(@RequestParam String polygon) {
+        return service.findAllPoly(polygon);
 
     }
 }

@@ -13,7 +13,7 @@ public class Company {
 
     private String name;
 
-    private String geometry;
+//    private String geometry;
 
 
     public Long getId() {
@@ -24,9 +24,9 @@ public class Company {
         return name;
     }
 
-    public String getGeometry() {
-        return geometry;
-    }
+//    public String getGeometry() {
+//        return geometry;
+//    }
 
 
     public void setId(Long id) {
@@ -37,9 +37,9 @@ public class Company {
         this.name = name;
     }
 
-    public void setGeometry(String geometry) {
-        this.geometry = geometry;
-    }
+//    public void setGeometry(String geometry) {
+//        this.geometry = geometry;
+//    }
 
 
 }

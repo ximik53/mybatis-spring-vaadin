@@ -21,7 +21,7 @@ public class CompanyService {
     public List<Company> findAll() {
         return companyRepository.findAll();
     }
-    public List<Company> findAllPoly(String names){
-        return companyRepository.findAllPoly(names);
+    public List<Company> findAllPoly(String polygon){
+        return companyRepository.findAllPoly("POLYGON((" + polygon + "))");
     }
 }

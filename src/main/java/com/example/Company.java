@@ -13,9 +13,6 @@ public class Company {
 
     private String name;
 
-//    private String geometry;
-
-
     public Long getId() {
         return id;
     }
@@ -24,11 +21,6 @@ public class Company {
         return name;
     }
 
-//    public String getGeometry() {
-//        return geometry;
-//    }
-
-
     public void setId(Long id) {
         this.id = id;
     }
@@ -36,10 +28,5 @@ public class Company {
     public void setName(String name) {
         this.name = name;
     }
-
-//    public void setGeometry(String geometry) {
-//        this.geometry = geometry;
-//    }
-
 
 }
